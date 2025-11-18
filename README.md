@@ -1,62 +1,23 @@
->📋  A template README.md for code accompanying a Machine Learning paper
-
-# My Paper Title
-
-This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
-
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
-
-## Requirements
-
-To install requirements:
-
-```setup
-pip install -r requirements.txt
+# How to set up environment to run our code 
+```bash
+conda create -n rectflow python=3.10
+conda activate rectflow
+pip install seaborn
+pip install lightgbm
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
+pip install tensorflow==2.9.0 tensorflow-probability==0.12.2 tensorflow-gan==2.0.0 tensorflow-datasets==4.6.0
+pip install jax==0.3.4 jaxlib==0.3.2 -f https://storage.googleapis.com/jax-releases/jax_releases.html
+pip install numpy==1.21.6 ninja==1.11.1 matplotlib==3.7.0 ml_collections==0.1.1 scikit-learn==1.3.2 pandas==2.0.3
+pip install hyperimpute # on windows, you may have to use hyperimpute==0.1.1
+python -m pip install git+https://github.com/treforevans/uci_datasets.git
 ```
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+Then run each jupyter notebook to see results. 
 
-## Training
+# Approximate Run Time
 
-To train the model(s) in the paper, run this command:
+On a machine with 16 core CPU and Nvidia RTX 3090 GPU, with 64 GB RAM, 
 
-```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
-```
-
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
-
-## Evaluation
-
-To evaluate my model on ImageNet, run:
-
-```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
-```
-
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
-
-## Pre-trained Models
-
-You can download pretrained models here:
-
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
-
-## Results
-
-Our model achieves the following performance on :
-
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
-
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
-
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
-
-
-## Contributing
-
->📋  Pick a licence and describe how to contribute to your code repository. 
+- ```demo_toy``` takes about a few minutes 
+- ```demo_UCI``` takes about about 5 mintues on the ```wine``` dataset
+- ```demo_imgs``` takes about about 6 hours

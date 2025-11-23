@@ -2,7 +2,7 @@
 
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2505.11749-b31b1b.svg)](https://arxiv.org/abs/2505.11749) [![OpenReview](https://img.shields.io/badge/OpenReview-NeurIPS%202025-8c1b13.svg)](https://openreview.net/pdf/b51848c5f9ad724e3a2e5f89c68946ee78f8eff8.pdf) [![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://yujhml.github.io/projects/MIRI/index.html) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yujhml/MIRI-Imputation/blob/master/examples/miri_demo_colab.ipynb)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.11749-b31b1b.svg)](https://arxiv.org/abs/2505.11749) [![OpenReview](https://img.shields.io/badge/OpenReview-NeurIPS%202025-8c1b13.svg)](https://openreview.net/pdf?id=r4BrtJRmy9) [![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://yujhml.github.io/projects/MIRI/index.html) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yujhml/MIRI-Imputation/blob/master/examples/miri_demo_colab.ipynb)
 
 Official implementation of **MIRI**.
 

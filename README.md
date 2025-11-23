@@ -1,23 +1,40 @@
-# How to set up environment to run our code 
+# MIRI: Missing Data Imputation by Reducing Mutual Information
+
+
+
+[![arXiv](https://img.shields.io/badge/arXiv-2505.11749-b31b1b.svg)](https://arxiv.org/abs/2505.11749) [![OpenReview](https://img.shields.io/badge/OpenReview-NeurIPS%202025-8c1b13.svg)](https://openreview.net/pdf/b51848c5f9ad724e3a2e5f89c68946ee78f8eff8.pdf)
+
+Official implementation of **MIRI**.
+
+MIRI imputes missing data by reducing mutual information between missing entries and imputed values, conditioned on observed data.
+
+## Installation
+
 ```bash
-conda create -n rectflow python=3.10
-conda activate rectflow
-pip install seaborn
-pip install lightgbm
-pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
-pip install tensorflow==2.9.0 tensorflow-probability==0.12.2 tensorflow-gan==2.0.0 tensorflow-datasets==4.6.0
-pip install jax==0.3.4 jaxlib==0.3.2 -f https://storage.googleapis.com/jax-releases/jax_releases.html
-pip install numpy==1.21.6 ninja==1.11.1 matplotlib==3.7.0 ml_collections==0.1.1 scikit-learn==1.3.2 pandas==2.0.3
-pip install hyperimpute # on windows, you may have to use hyperimpute==0.1.1
-python -m pip install git+https://github.com/treforevans/uci_datasets.git
+git clone https://github.com/yujhml/MIRI-Imputation.git
+cd MIRI-Imputation
+conda create -n miri python=3.10 && conda activate miri
+pip install -r requirements.txt
 ```
 
-Then run each jupyter notebook to see results. 
+## Usage
 
-# Approximate Run Time
+Run the demos in `examples/`:
+*   `demo_toy.ipynb`: Visualization on toy data.
+*   `demo_UCI.ipynb`: UCI dataset experiments.
+*   `demo_imgs.ipynb`: Image imputation.
 
-On a machine with 16 core CPU and Nvidia RTX 3090 GPU, with 64 GB RAM, 
+## Citation
 
-- ```demo_toy``` takes about a few minutes 
-- ```demo_UCI``` takes about about 5 mintues on the ```wine``` dataset
-- ```demo_imgs``` takes about about 6 hours
+```bibtex
+@inproceedings{yu2025missing,
+  title={Missing Data Imputation by Reducing Mutual Information with Rectified Flows},
+  author={Yu, Jiahao and Ying, Qizhen and Wang, Leyang and Jiang, Ziyue and Liu, Song},
+  booktitle={Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2025}
+}
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

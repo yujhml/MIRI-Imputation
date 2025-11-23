@@ -2,7 +2,7 @@
 
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2505.11749-b31b1b.svg)](https://arxiv.org/abs/2505.11749) [![OpenReview](https://img.shields.io/badge/OpenReview-NeurIPS%202025-8c1b13.svg)](https://openreview.net/pdf/b51848c5f9ad724e3a2e5f89c68946ee78f8eff8.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.11749-b31b1b.svg)](https://arxiv.org/abs/2505.11749) [![OpenReview](https://img.shields.io/badge/OpenReview-NeurIPS%202025-8c1b13.svg)](https://openreview.net/pdf/b51848c5f9ad724e3a2e5f89c68946ee78f8eff8.pdf) [![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://yujhml.github.io/projects/MIRI/index.html)
 
 Official implementation of **MIRI**.
 
